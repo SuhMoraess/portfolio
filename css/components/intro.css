@@ -1,0 +1,122 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    scroll-margin-top: 20rem; 
+}
+
+.intro-h1 {
+    font-weight: 400;    
+    font-family: monospace ;
+}
+
+
+.intro-name{    
+    font-weight: 600;    
+    font-family: monospace ;
+}
+
+.intro-max-width {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+  }
+
+ .heading-home {
+  padding-top: 9rem;
+ }
+
+section .intro__left {
+    max-width: 62rem;
+    flex: 1;
+}
+
+section .intro__left p {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+}
+
+section .intro__right .intro__image {
+    position: relative;
+    line-height: 0;
+}
+
+.intro__contact{
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .intro__right .intro__image::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--tertiary-color);
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    border-radius: 0.5rem;
+    z-index: -1;    
+}
+
+section .intro__right .intro__image .suhailah {
+    border-radius: 0.5rem;
+    min-width: 25rem;
+    max-width: 100%;
+}
+
+section .intro__right .intro__image .background {
+    position: absolute;
+    top: -4rem;
+    right: -2.5rem;
+    z-index: -1;
+    width: 100%;
+}
+
+section .intro__left .intro__stack ul {
+    margin-left: -1rem;
+    margin-bottom: 4rem;
+}
+
+section .intro__left .intro__stack ul li {
+  display: inline-block;
+  
+}
+
+section .intro__left .intro__stack ul li img{
+    display: inline-block;
+    padding: 1rem;
+}
+
+section .intro__left .intro__stack ul li img:hover {
+    transform: scale(1.5);
+    transition: all 0.8s;
+}
+@media only screen and (max-width: 768px) {
+    section {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    section .intro-h1 {
+        margin: 2rem 2rem 4rem; 
+    }
+  
+    section .intro__left p {
+        margin: 2rem 2rem 4rem;    
+    }
+
+    section .intro__right .intro__image img {
+       width: 200px;
+    }
+
+    .intro__contact {
+        max-width: 90%;
+        margin: 2rem;
+    }
+  }
